@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(233deg, 47%, 7%);
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.card {
+  background-color: hsl(244deg, 38%, 16%);
+  width: 90vw;
+  border-radius: 5px;
+}
+.card #image-container {
+  position: relative;
+}
+.card #image-container #mobile-image {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  display: block;
+}
+.card #image-container #desktop-image {
+  display: none;
+}
+.card #image-container #image-color {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(140, 0, 233);
+  opacity: 0.5;
+}
+.card #card-content {
+  padding: 0 30px 35px 30px;
+}
+.card #card-content h1 {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  margin-top: 30px;
+}
+.card #card-content h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+.card #card-content p {
+  text-align: center;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+#stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+#stats-container .stat {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-size: 0.7rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+#stats-container .bold {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.7rem;
+}
+footer .attribution {
+  color: hsl(0deg, 0%, 100%);
+}
+footer a {
+  color: hsl(277deg, 64%, 61%);
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  body {
+    height: 100vh;
+    padding: 0;
+  }
+  .card {
+    width: 95vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .card #image-container #mobile-image {
+    display: none;
+  }
+  .card #image-container #desktop-image {
+    display: block;
+  }
+  .card #card-content {
+    padding: 30px 42px 10px 42px;
+  }
+  .card #card-content h1, .card #card-content p {
+    text-align: center;
+  }
+  #stats-container {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */
